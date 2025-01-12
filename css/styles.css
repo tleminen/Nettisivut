@@ -122,4 +122,11 @@ section {
   padding-bottom: 0px;
 }
 
-/* Lisää muita tyylejä tarpeen mukaan */
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  margin-top: 1%;
+}
