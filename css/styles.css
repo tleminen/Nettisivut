@@ -130,7 +130,7 @@ li {
   text-decoration: none; /* Poistaa alleviivauksen */
   border: 2px solid rgb(255, 255, 255); /* Lisää mustat ääriviivat */
   border-radius: 10%;
-  padding: 8px; /* Lisää hieman tilaa tekstin ja ääriviivojen väliin */
+  padding: 4px; /* Lisää hieman tilaa tekstin ja ääriviivojen väliin */
   font-size: 18px;
 }
 
