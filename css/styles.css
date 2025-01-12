@@ -1,0 +1,125 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #1abc9c;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-gray-rgba: rgba(128, 128, 128, 0.325);
+  --bs-primary: #1abc9c;
+  --bs-secondary: #2c3e50;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: var(--bs-gray-100);
+  color: var(--bs-body-bg);
+}
+
+.tekstiboksi {
+  margin-top: 10%;
+  color: var(--bs-body-bg);
+  text-align: center;
+  background-color: var(--bs-gray-400);
+  padding: 5px;
+  border-radius: 5%;
+  border: 2px solid var(--bs-secondary);
+}
+
+.taustavari {
+  background-color: var(--bs-gray-300);
+}
+
+.ylaPalkki {
+  display: flex; /* Käytä flexboxia */
+  align-items: center; /* Kohdista elementit pystysuunnassa keskelle */
+  justify-content: inherit;
+}
+
+.portfolioTeksti {
+  margin-left: 20px;
+  font-family: "fantasy";
+  font-size: 40px;
+  color: inherit; /* Perii värin ympäröivästä elementistä */
+  text-decoration: none; /* Poistaa alleviivauksen */
+  border: 2px solid rgb(255, 255, 255); /* Lisää mustat ääriviivat */
+  padding: 5px; /* Lisää hieman tilaa tekstin ja ääriviivojen väliin */
+}
+
+.portfolioTeksti:hover {
+  background-color: var(--bs-gray-rgba);
+}
+
+.kuva {
+  text-align: left; /* Kohdista kuva vasemmalle */
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.ul-li-tekstit {
+  color: inherit; /* Perii värin ympäröivästä elementistä */
+  text-decoration: none; /* Poistaa alleviivauksen */
+  border: 2px solid rgb(255, 255, 255); /* Lisää mustat ääriviivat */
+  padding: 3px; /* Lisää hieman tilaa tekstin ja ääriviivojen väliin */
+}
+
+.ul-li-tekstit:hover {
+  background-color: var(--bs-gray-rgba);
+}
+
+.linkedIn {
+  color: var(--bs-blue);
+}
+
+.banner {
+  background-color: var(--bs-secondary);
+  color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.banner img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section {
+  padding: 80px;
+  padding-bottom: 0px;
+}
+
+/* Lisää muita tyylejä tarpeen mukaan */
