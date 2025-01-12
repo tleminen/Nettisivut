@@ -40,19 +40,11 @@ body {
   color: var(--bs-body-bg);
 }
 
-.tekstiboksi {
-  margin-top: 10%;
-  color: var(--bs-body-bg);
-  text-align: center;
-  background-color: var(--bs-gray-400);
-  padding: 5px;
-  border-radius: 5%;
-  border: 2px solid var(--bs-secondary);
-}
 
 .taustavari {
   background-color: var(--bs-gray-700);
 }
+
 
 .ylaPalkki {
   display: flex; /* Käytä flexboxia */
@@ -66,6 +58,9 @@ body {
   padding-bottom: 0;
   height: 70px;
   background-color: var(--bs-secondary);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-shrink .kuva {
@@ -83,14 +78,8 @@ body {
 
 .navbar-shrink .ul-li-tekstit {
   /* Kohdistaa .ul-li-tekstit-elementit */
-  font-size: 14px; /* Uusi fonttikoko */
+  font-size: 15px; /* Uusi fonttikoko */
   transition: font-size 0.5s ease-in-out;
-}
-.banner {
-  color: #ffffff;
-  width: 100%;
-  position: fixed;
-  top: 0;
 }
 
 .kuva {
@@ -104,7 +93,7 @@ body {
 .portfolioTeksti {
   font-family: "fantasy";
   font-size: 40px;
-  color: inherit; /* Perii värin ympäröivästä elementistä */
+  color: #ffffff; /* Perii värin ympäröivästä elementistä */
   text-decoration: none; /* Poistaa alleviivauksen */
   border: 2px solid rgb(255, 255, 255); /* Lisää mustat ääriviivat */
   border-radius: 10%;
@@ -126,12 +115,12 @@ li {
 }
 
 .ul-li-tekstit {
-  color: inherit; /* Perii värin ympäröivästä elementistä */
+  color: #ffffff; /* Perii värin ympäröivästä elementistä */
   text-decoration: none; /* Poistaa alleviivauksen */
   border: 2px solid rgb(255, 255, 255); /* Lisää mustat ääriviivat */
   border-radius: 10%;
   padding: 4px; /* Lisää hieman tilaa tekstin ja ääriviivojen väliin */
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .ul-li-tekstit:hover {
@@ -139,14 +128,30 @@ li {
   color: var(--bs-secondary);
 }
 
+.cv {
+  color: var(--bs-body-bg);
+  text-align: center;
+  background-color: var(--bs-gray-400);
+  padding: 5px;
+  border-radius: 5%;
+  border: 2px solid var(--bs-secondary);
+}
+
+.tekstiboksi {
+  margin-top: 10%;
+  color: var(--bs-body-bg);
+  text-align: center;
+  background-color: var(--bs-gray-400);
+  padding: 5px;
+  border-radius: 5%;
+  border: 2px solid var(--bs-secondary);
+}
+
 figure {
   display: inline-block;
   padding: 10px;
 }
 
-.cv {
-  margin-top: 10%;
-}
 
 .linkedIn {
   color: var(--bs-blue);
@@ -172,5 +177,49 @@ section {
   width: 100%;
   background-color: var(--bs-secondary);
   color: var(--bs-light);
-  margin-top: 1%;
 }
+
+/* Projekti.html css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.valikon-sisalto {
+  display: none; /* piilottaa valikon sisällön oletuksena */
+  position: absolute;
+  background-color: var(--bs-secondary);
+  min-width: 160px;
+}
+
+.valikon-sisalto a {
+  color: var(--bs-secondary);
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  color: var(--bs-light);
+}
+
+.valikon-sisalto a:hover {
+  background-color:var(--bs-light);
+  color: var(--bs-secondary);
+}
+
+.show {
+  display: block;
+}
+
+.valikko {
+  margin-left: 100%;
+  cursor: pointer;
+  color: var(--bs-light);
+  font-size: 200%;
+}
+
+.valikko:hover {
+  color: var(--bs-gray);
+}
+
+

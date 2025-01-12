@@ -9,26 +9,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body id="sivun-alkuun">
     <div class="taustavari">
       <header>
-        <div class="banner">
+        <div>
           <nav class="ylaPalkki" id="mainNav">
-            <div>
-              <a href="#sivun-alkuun"
-                ><img
-                  class="kuva"
-                  src="../kuvat/CVKUVA.jpg"
-                  alt="Kuva minusta"
-                />
-              </a>
-            </div>
-            <div>
-              <a class="portfolioTeksti" href="#sivun-alkuun"
-                >TOMI LEMINEN PORTFOLIO</a
-              >
-            </div>
+            <a href="#sivun-alkuun"
+              ><img class="kuva" src="../kuvat/CVKUVA.jpg" alt="Kuva minusta" />
+            </a>
+
+            <a class="portfolioTeksti" href="#sivun-alkuun"
+              >TOMI LEMINEN PORTFOLIO</a
+            >
             <ul>
               <li>
                 <a class="ul-li-tekstit" href="#CV">CV</a>
@@ -51,7 +45,8 @@
         </div>
       </header>
       <section id="CV">
-        <div class="cv">
+        <div>
+          <h1 class="cv">CV</h1>
           <object
             data="../pdf/TomiLeminenCV2025.pdf"
             type="application/pdf"
@@ -155,10 +150,9 @@
           ></a>
         </div>
       </section>
-
-      <div class="copyright">
-        <small>Copyright &copy; Tomi Leminen 2025</small>
-      </div>
+    </div>
+    <div class="copyright">
+      <small>Copyright &copy; Tomi Leminen 2025</small>
     </div>
     <script src="../js/script.js"></script>
   </body>

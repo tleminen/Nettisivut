@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-  // Navbar shrink function
+  //navigointipalkin pienentäminen funktio
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector("#mainNav");
     if (!navbarCollapsible) {
@@ -12,18 +12,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   };
 
-  // Shrink the navbar
+  //pienennä navigointipalkkia
+
   navbarShrink();
 
-  // Shrink the navbar when page is scrolled
+  //pienennä navigointipalkkia kun sivu on scrollattu
+
   document.addEventListener("scroll", navbarShrink);
 
-  // Activate Bootstrap scrollspy on the main nav element
-  const mainNav = document.body.querySelector("#mainNav");
-  if (mainNav) {
-    new bootstrap.ScrollSpy(document.body, {
-      target: "#mainNav",
-      rootMargin: "0px 0px -40%",
+  const valikko = document.querySelector(".valikko");
+  const valikkoSisalto = document.querySelector(".valikon-sisalto");
+
+  valikko.addEventListener("click", () => {
+    valikkoSisalto.classList.toggle("show");
+  });
+
+  //Piilota valikko klikkaamalla linkkiä
+  const valikonLinkit = document.querySelectorAll(".valikon-sisalto");
+
+  valikonLinkit.forEach((link) => {
+    link.addEventListener("click", () => {
+      valikkoSisalto.classList.remove("show");
     });
-  }
+  });
 });
