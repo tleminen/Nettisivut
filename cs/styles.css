@@ -40,11 +40,9 @@ body {
   color: var(--bs-body-bg);
 }
 
-
 .taustavari {
   background-color: var(--bs-gray-700);
 }
-
 
 .ylaPalkki {
   display: flex; /* Käytä flexboxia */
@@ -61,6 +59,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar-shrink .kuva {
@@ -152,15 +151,15 @@ figure {
   padding: 10px;
 }
 
-
 .linkedIn {
   color: var(--bs-blue);
 }
 
 section {
-  padding: 80px;
+  padding: 70px;
   padding-bottom: 0px;
 }
+
 
 .ikonit {
   color: var(--bs-secondary);
@@ -179,7 +178,14 @@ section {
   color: var(--bs-light);
 }
 
-/* Projekti.html css */
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--bs-gray-800);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ---------------------------- Projekti.html css ------------------------------------------------ */
 
 .dropdown {
   position: relative;
@@ -203,7 +209,7 @@ section {
 }
 
 .valikon-sisalto a:hover {
-  background-color:var(--bs-light);
+  background-color: var(--bs-light);
   color: var(--bs-secondary);
 }
 
@@ -222,4 +228,71 @@ section {
   color: var(--bs-gray);
 }
 
+.tekstiboksi2 {
+  margin-top: 10%;
+  color: var(--bs-body-bg);
+  display: flex; /* Ota flexbox käyttöön */
+  flex-direction: column; /* Aseta elementit päällekkäin */
+  background-color: var(--bs-gray-400);
+  padding: 5px;
+  border-radius: 5%;
+  border: 2px solid var(--bs-secondary);
+  align-items: center;
+}
 
+.slider-container {
+  width: 20%; /* Säätää sliderin leveyttä */
+  overflow: hidden;
+  border: 2px solid var(--bs-secondary);
+  display: flex;
+  flex-direction: column; /* Aseta slider ja buttonit päällekkäin */
+  align-items: center; /* Keskitä elementit vaakasuunnassa */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Lisää animaation kuvien vaihtoon */
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Napit */
+button {
+  position: absolute;
+  background-color: var(--bs-secondary);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#edellinen {
+  margin-right: 24%;
+  margin-top: 20%;
+  
+}
+
+#seuraava {
+  margin-left: 24%;
+  margin-top: 20%;
+}
+
+#edellinen:hover {
+  background-color: var(--bs-light);
+  color: var(--bs-secondary);
+}
+
+#seuraava:hover {
+  background-color: var(--bs-light);
+  color: var(--bs-secondary);
+}
+
+.slider-teksti {
+  text-align: center;
+  margin-top: 10px; /* Lisää tilaa sliderin ja tekstin väliin */
+  background-color: var(--bs-light);
+  font-family: Arial, Helvetica, sans-serif;
+}
