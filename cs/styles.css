@@ -31,6 +31,10 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+
+  --bs-bronze: #cd7f32;
+  --bs-silver: #c0c0c0;
+  --bs-gold: #ffd700;
 }
 
 body {
@@ -160,7 +164,6 @@ section {
   padding-bottom: 0px;
 }
 
-
 .ikonit {
   color: var(--bs-secondary);
   padding: 10px;
@@ -180,7 +183,7 @@ section {
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color:var(--bs-gray-800);
+  color: var(--bs-gray-800);
   font-weight: bold;
   text-align: center;
 }
@@ -272,7 +275,6 @@ button {
 #edellinen {
   margin-right: 24%;
   margin-top: 20%;
-  
 }
 
 #seuraava {
@@ -295,4 +297,27 @@ button {
   margin-top: 10px; /* Lisää tilaa sliderin ja tekstin väliin */
   background-color: var(--bs-light);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.muna {
+  width: 100px;
+  height: 150px;
+  background-color: #000000;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Munamainen muoto */
+  border: 1px solid var(--bs-light);
+  cursor: pointer;
+}
+
+#upgrade {
+  color: var(--bs-light);
+  background-color: var(--bs-secondary);
+  border-radius: 80%;
+  object-fit: cover;
+  padding: 1%;
+  align-items: center;
+}
+
+#upgrade:hover {
+  color: var(--bs-secondary);
+  background-color: var(--bs-gray-200);
 }
